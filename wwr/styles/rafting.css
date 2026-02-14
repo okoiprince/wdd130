@@ -194,6 +194,12 @@ a {
     text-decoration: none;
 }
 
+iframe {
+    width: 600;
+    height: 450;
+    border: 0;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
