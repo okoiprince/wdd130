@@ -7,7 +7,7 @@
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
     --main-border: 1px solid black;
-    --box-shadow: 0 0 30px grey;
+    --box-shadow: 0 0 20px grey;
 }
 
 * {
@@ -280,4 +280,193 @@ button {
     background: #b7a8d9;
     font-weight: bold;
     cursor: pointer;
+}
+
+.home-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 450px;
+    gap: 45px;
+    background: white;
+    text-align: center;
+}
+
+.home-gallery img {
+    width: 100%;
+    height: auto;
+    border: 6px solid #747202;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.book-now-btn {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: #fff
+}
+
+.book-now-btn button {
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.aside-box button {
+    background-color: rgb(156, 167, 2);
+    color: white;
+    border-radius: .5rem;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: bisque;
+    margin-bottom: 100px;
+    background-size: cover;
+}
+
+.display-picture img {
+    width: 400px;
+    height: auto;
+    margin: 60px;
+    box-shadow: var(--box-shadow);
+}
+
+.aside-box {
+    position: absolute;
+    display: grid;
+    width: 400px;
+    height: 200px;
+    margin-left: 350px;
+    margin-top: -290px;
+    padding: 6px;
+    background-color: rgb(59, 33, 1);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    color: white;
+    border-radius: 6px;
+}
+
+.aside-box h2 {
+    color: #fff;
+}
+
+.newsletter {
+    background-color: #b7c4b6;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 8px;
+}
+
+.newsletter button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: rgb(156, 167, 2);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.trips-hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    color: rgb(4, 0, 14);
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--accent2-color);
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.cta-btn:hover {
+    opacity: .85;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform .2s;
+}
+
+.trip-card:hover {
+    transform: translateY(-6px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 15px;
+}
+
+.trip-table-section {
+    padding: 40px;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-table th {
+    background: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background: #f4f4f4;
 }
