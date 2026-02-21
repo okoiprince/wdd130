@@ -308,9 +308,15 @@ button {
     color: #fff
 }
 
-.book-now-btn button {
-    border-radius: .5rem;
+.index-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgb(0, 17, 0);
+    color: yellow;
     box-shadow: var(--box-shadow);
+    font-weight: bold;
+    border-radius: 6px;
 }
 
 .aside-box button {
